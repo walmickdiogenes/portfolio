@@ -1,0 +1,269 @@
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+section {
+  padding: 80px 50px;
+}
+
+section > div {
+  max-width: 1000px;
+  margin: auto;
+}
+
+section.blue {
+  background-color: #394257;
+  color: white;
+}
+
+hr {
+  -webkit-animation: width-in 0.8s ease-in-out both;
+  animation: width-in 0.8s ease-in-out both;
+}
+
+section.hero .logo {
+  -webkit-animation: slide-up 0.8s ease-in-out both;
+  animation: slide-up 0.8s ease-in-out both;
+  display: block;
+  width: 248.944px;
+  height: 104.595px;
+}
+
+section.hero .element {
+  -webkit-animation: slide-up 0.8s ease-in-out both;
+  animation: slide-up 0.8s ease-in-out both;
+  height: 48px;
+  display: inline;
+}
+
+section.hero .typed-cursor {
+  font-size: 2.5rem;
+  color: #FCEE55;
+  display: inline;
+}
+
+section.hero h3 {
+  font-weight: 400;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+section.hero .logo {
+  margin-bottom: 20px;
+}
+
+section.hero hr {
+  margin: 30px 0;
+}
+
+hr.white {
+  border-top: 1px solid rgba(255,255,255,.4);
+}
+
+a, a:hover {
+  text-decoration: inherit;
+}
+
+@keyframes slide-up {
+  0% { opacity: 0; transform: translate3d(0, 10%, 0); }
+  90% { opacity: 1; }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes width-in {
+  0% { width: 0; margin-right: 100%; }
+  100% { width: 100%; margin-right: 0%; }
+}
+
+.about-me .header {
+  display: table;
+  width: 100%;
+}
+
+.about-me .header > *:first-child {
+  margin-right: 10px;
+}
+
+.about-me .header > * {
+  display: table-cell;
+  vertical-align: middle;
+  color: #FCEE55;
+}
+
+.about > .row > .about-me {
+  border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+.work-exp .date {
+  color: #FCEE55;
+}
+
+.work-exp .title {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.work-exp .title .company {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  text-transform: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background: rgba(252,238,85,0.6);
+    box-shadow: inset 0px 0px 10px 2px rgba(252,238,85,0),
+                      0px 0px 5px 2px rgba(252,238,85,0.5);
+  }
+  100% {
+    background: rgba(252,238,85,1);
+    box-shadow: inset 0px 0px 10px 2px rgba(252,238,85,0.5),
+                      0px 0px 5px 2px rgba(252,238,85,1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    background: rgba(252,238,85,0.6);
+    box-shadow: inset 0px 0px 20px 2px rgba(252,238,85,0),
+                      0px 0px 10px 2px rgba(252,238,85,0.5);
+  }
+  100% {
+    background: rgba(252,238,85,1);
+    box-shadow: inset 0px 0px 20px 2px rgba(252,238,85,0.5),
+                      0px 0px 10px 2px rgba(252,238,85,1);
+  }
+}
+
+section h4.title {
+  margin-bottom: 40px;
+}
+
+a.button-lermais {
+  margin: 20px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  background-color: white;
+  color: #394257;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+a.arrow::after {
+  display: inline-block;
+  padding-left: 20px;
+  content: "\0279E"; // arrow right unicode
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+a.arrow:hover::after {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.row.project {
+  margin-bottom: 150px;
+}
+
+section.footer {
+  padding: 20px 50px 50px 50px;
+  text-align: center;
+}
+
+ul.socials {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  
+}
+
+ul.socials li {
+  display: inline;
+  margin-right: 10px;
+}
+
+ul.socials > li:last-child {
+  margin-right: 0;
+}
+
+section.footer .logo {
+  width: 80px;
+  margin-top: 10px;
+}
+
+.show-mobile {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .about > .row > .about-me {
+    border-right: none;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: block !important;
+  }
+
+  .row.project {
+    margin: auto auto 60px auto;
+  }
+
+  .skillsets > div {
+    margin-bottom: 30px;
+  }
+
+  .hire-me {
+    top: 15px;
+    right: 15px;
+  }
+
+  section.hero .element {
+    height: 103px;
+    font-size: 26px;
+  }
+
+  section.hero h3 {
+    font-size: 18px;
+  }
+
+  section.hero .logo {
+    width: 130px;
+  }
+}
+
