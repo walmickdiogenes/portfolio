@@ -153,6 +153,10 @@ a, a:hover {
   }
 }
 
+.portfolio-img{
+  width: 100%;
+}
+
 section h4.title {
   margin-bottom: 40px;
 }
@@ -266,4 +270,16 @@ section.footer .logo {
     width: 130px;
   }
 }
+
+.skillsets img {
+  height: 150px;
+}
+
+.progress .progress-bar{
+   
+    width: 0;
+    transition: all ease 0.5s;
+
+  }
+
 
