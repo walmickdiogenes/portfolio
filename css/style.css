@@ -168,10 +168,26 @@ a.button-lermais {
   font-weight: bold;
   display: inline-block;
   letter-spacing: 0.5px;
+  border: 2px solid white;
   background-color: white;
   color: #394257;
   padding: 10px 15px;
   margin: 0;
+  
+}
+
+a.button-obter {
+  margin: 20px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 15px;
+  margin: 0;
+  
 }
 
 a.arrow::after {

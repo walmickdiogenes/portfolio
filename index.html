@@ -6,34 +6,17 @@
     <meta property="og:title" content="Portfolio - Walmick Diógenes" />
     <title>Walmick Diógenes</title>
 
-    <!-- own style -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="icon" href="images/icone.png" type="image/x-icon">
     <script src="js/wow.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script>new WOW().init();</script>
     <link href="https://fonts.googleapis.com/css?family=Oswald:500|Playfair+Display:400,400i,700|Quattrocento+Sans:400,700" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   </head>
-  
-  <script>
-    $(document).ready(function(){
-      $('.illustrator').animate({width:'60%'},2000);
-      $('.xd').animate({width:'80%'},2000);
-      $('.git').animate({width:'75%'},2000);
-      $('.scrum').animate({width:'30%'},2000);
-      $('.html').animate({width:'45%'},2000);
-      $('.poo').animate({width:'55%'},2000);
-      $('.comunicacao').animate({width:'95%'},2000);
-      $('.adaptabilidade').animate({width:'80%'},2000);
-      $('.trab').animate({width:'95%'},2000);
-    });
-
-  </script>
-  
+ 
   <body>
     <section class="hero blue">
       <div class="content">
@@ -62,12 +45,10 @@
                 </p>
               </div>
 
-              <!-- mudar esse botão para o ler mais -->
               <div>
                 <a class="button-lermais arrow" href="ler-mais.html" target="_blank">Ler Mais</a>
               </div>
             </div>
-            <!-- ./about-me -->
             <div class="col-sm-8 work-exp">
               <hr class="white show-mobile">
               <h5 class="mb-4">Experiências</h5>
@@ -82,7 +63,7 @@
                     <p>Atualmente exerço a função de bolsista na Coordenadoria de TI do IFCE Fortaleza. </p>
                     <p>Acumulo a  função de Suporte, a liderança dos demais bolsistas, no meu turno de serviço, uma atividade de alta responsabilidade, a qual é totalmente voluntária. </p>
                   </div>
-                </div><!--./col-sm-6-->
+                </div>
                 <div class="col-sm-6">
                   <hr class="white show-mobile">
                   <div class="date">Maio 2019 - Atualmente</div>
@@ -93,13 +74,13 @@
                   <div class="desc">
                     <p>Vinculado a Diretoria de Comunicação da chapa Greice Hoper, desenvolvo a função fazendo a administração dos canais oficiais de comunicação (Instagram, E-mail e Facebook).</p>
                   </div>
-                </div><!--./col-sm-6-->
-              </div><!--./row-->
+                </div>
+              </div>
             </div>
           </div>
-        </div><!-- ./about-me -->
+        </div>
       </div>
-    </section><!-- ./hero -->
+    </section>
 
     <section class="portfolio">
       <div>
@@ -112,7 +93,6 @@
           Logos        
         </h4>
         <img class="portfolio-img slideInDown" src="images/artes1.png" alt="Artes">
-
       </div>
     </section>
 
@@ -138,6 +118,7 @@
               <div class="progress scrum"></div>
             </div>
           </div>
+
           <div class="col-md-4 ml-md-auto">
             <img class="mb-4" src="images/dev-draw.svg" alt="Branding & Identity">
             <h5 class="mb-4">Desenvolvimento</h5>
@@ -154,6 +135,7 @@
               <div class="progress git"></div>
             </div>
           </div>
+
           <div class="col-md-4 ml-md-auto">
             <img class="mb-4" src="images/outros-draw.svg" alt="Branding & Identity">
             <h5 class="mb-4">Pessoal</h5>
@@ -189,14 +171,25 @@
 
     <script>
       var options = {
-        strings: ["Dizem que sou desenrolado. ^500", "Sou movido pela curiosidade. ^500", "Cuido de plantinhas. ^500", "Sit Dolor. ^500"],
+        strings: ["Dizem que sou desenrolado. ^500", "Sou movido pela curiosidade. ^500", "Cuido de plantinhas. ^500"],
         typeSpeed: 60,
         loop: true,
         backSpeed: 30
       }
       var typed = new Typed(".element", options);
+
+      $(document).ready(function(){
+        $('.illustrator').animate({width:'60%'},2000);
+        $('.xd').animate({width:'80%'},2000);
+        $('.git').animate({width:'75%'},2000);
+        $('.scrum').animate({width:'30%'},2000);
+        $('.html').animate({width:'45%'},2000);
+        $('.poo').animate({width:'55%'},2000);
+        $('.comunicacao').animate({width:'95%'},2000);
+        $('.adaptabilidade').animate({width:'80%'},2000);
+        $('.trab').animate({width:'95%'},2000);
+      });
     </script>
-
   </body>
-
   </html>
+  <!--design by jessing-->
