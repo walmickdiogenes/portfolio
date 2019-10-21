@@ -12,11 +12,28 @@
     <link href="css/animate.css" rel="stylesheet">
     <link rel="icon" href="images/icone.png" type="image/x-icon">
     <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script>new WOW().init();</script>
     <link href="https://fonts.googleapis.com/css?family=Oswald:500|Playfair+Display:400,400i,700|Quattrocento+Sans:400,700" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   </head>
+  
+  <script>
+    $(document).ready(function(){
+      $('.illustrator').animate({width:'60%'},2000);
+      $('.xd').animate({width:'80%'},2000);
+      $('.git').animate({width:'75%'},2000);
+      $('.scrum').animate({width:'30%'},2000);
+      $('.html').animate({width:'45%'},2000);
+      $('.poo').animate({width:'55%'},2000);
+      $('.comunicacao').animate({width:'95%'},2000);
+      $('.adaptabilidade').animate({width:'80%'},2000);
+      $('.trab').animate({width:'95%'},2000);
+    });
 
+  </script>
+  
   <body>
     <section class="hero blue">
       <div class="content">
@@ -102,8 +119,58 @@
     <section class="blue">
       <div>
         <h4 class="title text-center">
-          Habilidades
+          Interesses & Habilidades  
         </h4>
+        <div class="row wow fadeInUp skillsets">
+          <div class="col-md-4 ml-md-auto">
+            <img class="mb-4" src="images/prototipo-draw.svg" alt="Branding & Identity">
+            <h5 class="mb-4">Design e Protótipo</h5>
+            <p style="margin-bottom: 5px;">Adobe Illustrator</p>
+            <div class="progressBar">
+              <div class="progress illustrator"></div>
+            </div>
+            <p style="margin-bottom: 5px;">Adobe Xd</p>
+            <div class="progressBar">
+              <div class="progress xd"></div>
+            </div>
+            <p style="margin-bottom: 5px;">Scrum</p>
+            <div class="progressBar">
+              <div class="progress scrum"></div>
+            </div>
+          </div>
+          <div class="col-md-4 ml-md-auto">
+            <img class="mb-4" src="images/dev-draw.svg" alt="Branding & Identity">
+            <h5 class="mb-4">Desenvolvimento</h5>
+            <p style="margin-bottom: 5px;">HTML + CSS + JS</p>
+            <div class="progressBar">
+                <div class="progress html"></div>
+            </div>
+            <p style="margin-bottom: 5px;">POO</p>
+            <div class="progressBar">
+              <div class="progress poo"></div>
+            </div>
+            <p style="margin-bottom: 5px;">Git</p>
+            <div class="progressBar">
+              <div class="progress git"></div>
+            </div>
+          </div>
+          <div class="col-md-4 ml-md-auto">
+            <img class="mb-4" src="images/outros-draw.svg" alt="Branding & Identity">
+            <h5 class="mb-4">Pessoal</h5>
+            <p style="margin-bottom: 5px;">Comunicação</p>
+            <div class="progressBar">
+                <div class="progress comunicacao"></div>
+            </div>
+            <p style="margin-bottom: 5px;">Adaptabilidade</p>
+            <div class="progressBar">
+                <div class="progress adaptabilidade"></div>
+            </div>
+            <p style="margin-bottom: 5px;">Trabalho em equipe</p>
+            <div class="progressBar">
+                <div class="progress trab"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -122,7 +189,7 @@
 
     <script>
       var options = {
-        strings: ["Dizem que sou desenrolado. ^500", "Sou movido pela curiosidade. ^500", "Lorem Ipsum. ^500", "Sit Dolor. ^500"],
+        strings: ["Dizem que sou desenrolado. ^500", "Sou movido pela curiosidade. ^500", "Cuido de plantinhas. ^500", "Sit Dolor. ^500"],
         typeSpeed: 60,
         loop: true,
         backSpeed: 30
